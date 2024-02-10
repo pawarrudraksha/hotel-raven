@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { BarChart } from '@mui/x-charts/BarChart';
 import data from "../data/data.json";
+import styles from "../styles/Charts.module.css"
+import { useAppSelector } from '../app/hooks';
+import { selectSelectedMonth } from '../features/appSlice';
 
 interface Data {
   hotel: string;
@@ -16,22 +19,26 @@ interface Data {
 const BarChartComponent: React.FC = () => {
   const [noOfVisitors, setNoOfVisitors] = useState<{ [country: string]: number }>({});
 
+  const month = useAppSelector(selectSelectedMonth)
   useEffect(() => {
-    const augustData = data.filter((item: Data) => item.arrival_date_month === "August");
-    const updatedVisitorsData: { [country: string]: number } = {};
-
-    augustData.forEach((item: Data) => {
-      const totalVisitors = item.adults + item.children + item.babies;
-      const country = item.country;
-      updatedVisitorsData[country] = (updatedVisitorsData[country] || 0) + totalVisitors;
-    });
-
-    setNoOfVisitors(updatedVisitorsData);
-  }, [data]);
-
+    if(month){
+      const filteredData = data.filter((item: Data) => item.arrival_date_month === month);
+      
+      const updatedVisitorsData: { [country: string]: number } = {};
+      filteredData.forEach((item: Data) => {
+        
+        const totalVisitors = item.adults + item.children + item.babies;
+        const country = item.country;
+        updatedVisitorsData[country] = (updatedVisitorsData[country] || 0) + totalVisitors;
+      });
+      
+      setNoOfVisitors(updatedVisitorsData);
+    }
+  }, [data,month]);
+  
 
   return (
-    <div>
+    <div className={styles.barChartContainer}>
       {Object.keys(noOfVisitors).length > 0 ? (
         <BarChart
           xAxis={[{ scaleType: 'band', data: Object.keys(noOfVisitors) }]}

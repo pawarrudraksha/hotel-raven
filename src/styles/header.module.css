@@ -2,14 +2,11 @@
     display: flex;
     align-items: center;
     padding: 2%;
-    justify-content: space-between;
-}
-
-.headerLeft{
     font-size: 40px;    
     color: whitesmoke;
+    gap: 10px;
 }
 
-.headerLeft span{
+.header span{
     color: rgb(170, 159, 159);
 }

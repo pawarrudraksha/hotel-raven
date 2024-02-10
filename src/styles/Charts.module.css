@@ -1,0 +1,11 @@
+.barChartContainer{
+    display: inline-block;
+    
+}
+.lineChartContainer{
+    display: inline-block;
+}
+
+.sparkLineChartContainer{
+    display: flex;
+}

@@ -1,6 +1,13 @@
 .App{
   background-color: #282C2F;
-  height: 100vh !important;
+  height: 100%;
   width: 100%;
+  display: flex;
 }
  
+.AppContent{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+}

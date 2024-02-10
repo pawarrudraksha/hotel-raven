@@ -1,0 +1,21 @@
+.sidebarContainer{
+    background-color: #222629;
+    height: 100vh;
+    padding-top: 4%;
+}
+.sidebarContent{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    gap: 10px;
+}
+.sidebarMonth{
+    display: flex;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.sidebarMonth input{
+    width: 20px;
+    height: 20px;
+}

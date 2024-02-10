@@ -6,8 +6,8 @@ import SparkLineChartComponent from './SparkLineChart'
 
 export default function Body() {
   return (
-    <div className="body">
-        <div className="bodyChartsSection">
+    <div className={styles.body}>
+        <div className={styles.bodyChartsSection}>
             <LineChartComponent/>
             <BarChartComponent/>
             <SparkLineChartComponent/>
