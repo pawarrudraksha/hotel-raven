@@ -11,6 +11,96 @@
 {
   "hotel": "Resort Hotel",
   "arrival_date_year": 2015,
+  "arrival_date_month": "January",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "February",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "March",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "April",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "May",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "June",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "September",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "October",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
+  "arrival_date_month": "November",
+  "arrival_date_day_of_month": 1,
+  "adults": 1,
+  "children": 0,
+  "babies": 0,
+  "country": "GBR"
+},
+{
+  "hotel": "Resort Hotel",
+  "arrival_date_year": 2015,
   "arrival_date_month": "July",
   "arrival_date_day_of_month": 1,
   "adults": 1,
@@ -32,6 +122,16 @@
     "hotel": "Resort Hotel",
     "arrival_date_year": 2015,
     "arrival_date_month": "July",
+    "arrival_date_day_of_month": 1,
+    "adults": 2,
+    "children": 0,
+    "babies": 0,
+    "country": "USA"
+  },
+  {
+    "hotel": "Resort Hotel",
+    "arrival_date_year": 2015,
+    "arrival_date_month": "December",
     "arrival_date_day_of_month": 1,
     "adults": 2,
     "children": 0,

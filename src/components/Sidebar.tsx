@@ -40,8 +40,8 @@ const  Sidebar:React.FC=()=> {
     <div className={styles.sidebarContainer}>
         <div className={styles.sidebarHeader}>
             <Button variant="text">Filter</Button>
-            <Button variant="text">Report</Button>
-            <Button variant="text">Actions</Button>
+            {/* <Button variant="text">Report</Button>
+            <Button variant="text">Actions</Button> */}
         </div>        
         <div className={styles.sidebarContent}>
           {months.map((month)=>(
