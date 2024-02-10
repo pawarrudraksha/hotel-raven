@@ -21,6 +21,8 @@ interface Data{
 
 const SparkLineChartComponent:React.FC=()=> {
   const [visitorsByDay, setVisitorsByDay] = useState<{ [day: number]: { adults: number; children: number } }>({});
+  const [totalAdults,setTotalAdults]=useState<number>(0)
+  const [totalChildren,setTotalChildren]=useState<number>(0)
   const month = useAppSelector(selectSelectedMonth)
   useEffect(() => {
     if(month){
@@ -53,12 +55,15 @@ const SparkLineChartComponent:React.FC=()=> {
   return (
     <div className={styles.sparkLineChartContainer}>
       <div className={styles.sparkLineAdultChartContainer}>
+        <h2>Adult visitors in {month}</h2>
         <Box sx={{ flexGrow: 1 }}>
         <SparkLineChart data={adultValues} height={300} width={500} />
         </Box>
       </div>
       <div className={styles.sparkLineChildrenChartContainer}>
+        <h2>Children visitors in {month}</h2>
         <Box sx={{ flexGrow: 1 }}>
+          
         <SparkLineChart data={childrenValues} height={300} width={500}/>
         </Box>
       </div>

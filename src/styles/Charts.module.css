@@ -1,11 +1,14 @@
 .barChartContainer{
     display: inline-block;
+    color: whitesmoke;
     
 }
 .lineChartContainer{
     display: inline-block;
+    color: whitesmoke;
 }
 
 .sparkLineChartContainer{
     display: flex;
+    color: whitesmoke;
 }

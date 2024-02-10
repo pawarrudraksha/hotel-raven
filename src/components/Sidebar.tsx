@@ -45,9 +45,9 @@ const  Sidebar:React.FC=()=> {
         </div>        
         <div className={styles.sidebarContent}>
           {months.map((month)=>(
-            <div key={month.id} className={styles.sidebarMonth}>
+            <div key={month.id} className={`${styles.sidebarMonth} ${checkedMonth[month.id] && styles.sidebarActiveCheckbox}`}>
             <input type="checkbox" id={`${month.id}`} onChange={handleCheckboxChanged} checked={checkedMonth[month.id] || false}/>
-            <label>{month.name}</label>
+            <label htmlFor={`${month.id}`}>{month.name}</label>
             </div>
           ))}
          

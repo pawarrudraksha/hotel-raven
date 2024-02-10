@@ -1,21 +1,31 @@
 .sidebarContainer{
     background-color: #222629;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 4%;
 }
 .sidebarContent{
     display: flex;
     flex-direction: column;
-    padding: 14px;
     gap: 10px;
 }
 .sidebarMonth{
     display: flex;
     gap: 10px;
     color: whitesmoke;
+    cursor: pointer;
+    padding: 7px;
+    padding-left: 12px;
 }
 
+.sidebarActiveCheckbox{
+    background-color: #282C2F;
+}
+.sidebarMonth label{
+    width: 100%;
+    cursor: pointer;
+}
 .sidebarMonth input{
     width: 20px;
     height: 20px;
+    display: none;
 }

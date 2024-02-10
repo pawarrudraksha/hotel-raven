@@ -34,6 +34,7 @@ const LineChartComponent: React.FC = () => {
   
   return (
     <div className={styles.lineChartContainer}>
+      <h2>Visitors in {month}</h2>
       {
         Object.keys(noOfVisitorsData).length>0 ?
         <LineChart

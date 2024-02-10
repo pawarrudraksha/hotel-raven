@@ -39,6 +39,7 @@ const BarChartComponent: React.FC = () => {
 
   return (
     <div className={styles.barChartContainer}>
+      <h2>No of visitors / Country</h2>
       {Object.keys(noOfVisitors).length > 0 ? (
         <BarChart
           xAxis={[{ scaleType: 'band', data: Object.keys(noOfVisitors) }]}
